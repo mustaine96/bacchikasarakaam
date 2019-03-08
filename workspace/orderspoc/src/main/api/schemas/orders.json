@@ -1,0 +1,23 @@
+{
+  "required" : true,
+  "$schema" : "http://json-schema.org/draft-03/schema" ,
+  "type" : "object" ,
+  "properties" : {
+      "ItemId" : {
+      "type" : "integer",
+      "required" : true
+      },
+    "ItemName" : {
+      "type" : "string",
+      "required" : false
+      },
+    "price" : {
+      "type" : "string",
+      "required" : false
+      },
+    "quantity" : {
+      "type" : "integer",
+      "required" : true
+      }
+    }
+}

@@ -1,0 +1,505 @@
+2019-02-01 17:08:06,261 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:06,423 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 17:08:06,688 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 17:08:06,779 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 17:08:06,779 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 17:08:06,838 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 17:08:06 IST 2019]; root of context hierarchy
+2019-02-01 17:08:07,816 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 17:08:08,596 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-01 17:08:09,077 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 17:08:09,092 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 17:08:09,179 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 17:08:09,184 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 17:08:09,185 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c9934da
+2019-02-01 17:08:09,208 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 17:08:09,471 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:08:09,471 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:08:09,472 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-01 17:08:09,473 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:09,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 17:08:09,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 17:08:09,531 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-01 17:08:09,534 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:09,536 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 17:08:09,537 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 17:08:09,538 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 17:08:09,587 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 17:08:09,607 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 17:08:19,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:19,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: munittestingFlow
+2019-02-01 17:08:19,657 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: munittestingFlow.stage1
+2019-02-01 17:08:19,785 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-02-01 17:08:19,812 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081
+2019-02-01 17:08:19,813 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-02-01 17:08:19,813 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-02-01 17:08:19,817 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'munittesting'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:19,818 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-02-01 17:08:19,818 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: munittestingFlow
+2019-02-01 17:08:19,819 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: munittestingFlow.stage1
+2019-02-01 17:08:19,822 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-02-01 17:08:19,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 17:08:06 IST 2019]; root of context hierarchy
+2019-02-01 17:08:19,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "munittesting" shut down normally on: 1/2/19 5:08 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 10.503 sec                        *
+**********************************************************************
+2019-02-01 17:08:20,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:20,128 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 17:08:20,133 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 17:08:20,157 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 17:08:20,158 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 17:08:20,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@64bd95f8: startup date [Fri Feb 01 17:08:20 IST 2019]; root of context hierarchy
+2019-02-01 17:08:21,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 17:08:21,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 17:08:21,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 17:08:21,310 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 17:08:21,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 17:08:21,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6f6725cf
+2019-02-01 17:08:21,319 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 17:08:21,356 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:08:21,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:08:21,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:21,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 17:08:21,362 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 17:08:21,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-01 17:08:21,404 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:08:21,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 17:08:21,408 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 17:08:21,408 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 17:08:21,421 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 17:08:21,428 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 17:17:05,889 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:06,055 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 17:17:06,311 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 17:17:06,403 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 17:17:06,403 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 17:17:06,454 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 17:17:06 IST 2019]; root of context hierarchy
+2019-02-01 17:17:07,477 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 17:17:08,365 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-01 17:17:08,891 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 17:17:08,911 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 17:17:09,027 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 17:17:09,031 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 17:17:09,031 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29c17c3d
+2019-02-01 17:17:09,069 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 17:17:09,354 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:17:09,355 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:17:09,361 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-01 17:17:09,361 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:09,363 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 17:17:09,363 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 17:17:09,411 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-01 17:17:09,413 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:09,415 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 17:17:09,417 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 17:17:09,417 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 17:17:09,454 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 17:17:09,475 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 17:17:54,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:54,537 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: munittestingFlow
+2019-02-01 17:17:54,537 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: munittestingFlow.stage1
+2019-02-01 17:17:54,576 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-02-01 17:17:54,595 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081
+2019-02-01 17:17:54,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-02-01 17:17:54,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-02-01 17:17:54,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'munittesting'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:54,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-02-01 17:17:54,603 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: munittestingFlow
+2019-02-01 17:17:54,604 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: munittestingFlow.stage1
+2019-02-01 17:17:54,607 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-02-01 17:17:54,839 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 17:17:06 IST 2019]; root of context hierarchy
+2019-02-01 17:17:54,859 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "munittesting" shut down normally on: 1/2/19 5:17 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 45.495 sec                        *
+**********************************************************************
+2019-02-01 17:17:55,014 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:55,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 17:17:55,027 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 17:17:55,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 17:17:55,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 17:17:55,046 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@449a8d10: startup date [Fri Feb 01 17:17:55 IST 2019]; root of context hierarchy
+2019-02-01 17:17:55,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 17:17:56,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 17:17:56,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 17:17:56,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 17:17:56,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 17:17:56,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6b64a683
+2019-02-01 17:17:56,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 17:17:56,209 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:17:56,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:17:56,213 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:56,218 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 17:17:56,218 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 17:17:56,246 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-01 17:17:56,248 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:17:56,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 17:17:56,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 17:17:56,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 17:17:56,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 17:17:56,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 17:25:48,758 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:25:48,981 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 17:25:49,093 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 17:25:49,287 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 17:25:49,288 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 17:25:49,569 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4152d38d: startup date [Fri Feb 01 17:25:49 IST 2019]; root of context hierarchy
+2019-02-01 17:25:51,012 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 17:25:52,399 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-01 17:25:52,949 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 17:25:52,968 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 17:25:53,136 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 17:25:53,140 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 17:25:53,141 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@58b5a2f3
+2019-02-01 17:25:53,186 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 17:25:53,762 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:25:53,763 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 17:25:53,770 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-01 17:25:53,772 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:25:53,777 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 17:25:53,780 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 17:25:53,891 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-01 17:25:53,895 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 17:25:53,899 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 17:25:53,901 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 17:25:53,908 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 17:25:54,005 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 17:25:54,076 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 18:03:18,206 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:03:18,633 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 18:03:18,747 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 18:03:18,853 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 18:03:18,853 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 18:03:18,923 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@719bb3b4: startup date [Fri Feb 01 18:03:18 IST 2019]; root of context hierarchy
+2019-02-01 18:03:20,082 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 18:03:21,322 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-01 18:03:21,485 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 18:03:21,505 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 18:03:21,614 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 18:03:21,618 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 18:03:21,618 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@19002b34
+2019-02-01 18:03:21,650 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 18:03:22,154 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:03:22,154 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:03:22,155 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-01 18:03:22,156 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:03:22,157 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 18:03:22,157 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 18:03:22,183 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:03:22,186 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 18:03:22,187 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 18:03:22,187 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 18:03:22,244 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 18:03:22,266 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 18:16:23,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:16:23,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: munittestingFlow
+2019-02-01 18:16:23,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: munittestingFlow.stage1
+2019-02-01 18:16:23,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-02-01 18:16:23,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-02-01 18:16:23,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-02-01 18:16:23,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'munittesting'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:16:23,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-02-01 18:16:23,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: munittestingFlow
+2019-02-01 18:16:23,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: munittestingFlow.stage1
+2019-02-01 18:16:23,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-02-01 18:16:23,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@719bb3b4: startup date [Fri Feb 01 18:03:18 IST 2019]; root of context hierarchy
+2019-02-01 18:16:23,349 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "munittesting" shut down normally on: 1/2/19 6:16 PM   *
+* Up for: 0 days, 0 hours, 13 mins, 1.190 sec                        *
+**********************************************************************
+2019-02-01 18:16:23,477 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:16:23,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 18:16:23,492 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 18:16:23,503 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 18:16:23,503 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 18:16:23,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6e3fb8a8: startup date [Fri Feb 01 18:16:23 IST 2019]; root of context hierarchy
+2019-02-01 18:16:23,773 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 18:16:23,928 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 18:16:23,933 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 18:16:23,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 18:16:23,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 18:16:23,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1a1500c
+2019-02-01 18:16:23,960 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 18:16:23,991 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:16:23,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:16:23,993 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:16:23,995 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 18:16:23,995 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 18:16:24,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:16:24,017 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 18:16:24,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 18:16:24,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 18:16:24,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 18:16:24,047 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 18:30:07,065 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:07,231 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 18:30:07,481 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 18:30:07,575 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 18:30:07,575 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 18:30:07,630 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 18:30:07 IST 2019]; root of context hierarchy
+2019-02-01 18:30:08,685 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 18:30:09,410 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-01 18:30:09,545 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 18:30:09,562 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 18:30:09,658 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 18:30:09,663 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 18:30:09,663 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1a3e8e24
+2019-02-01 18:30:09,688 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 18:30:10,144 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:30:10,144 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:30:10,145 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-01 18:30:10,146 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:10,176 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 18:30:10,176 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 18:30:10,204 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:10,206 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 18:30:10,208 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 18:30:10,208 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 18:30:10,252 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 18:30:10,272 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-01 18:30:20,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:20,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: munittestingFlow
+2019-02-01 18:30:20,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: munittestingFlow.stage1
+2019-02-01 18:30:20,473 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-02-01 18:30:20,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-02-01 18:30:20,476 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-02-01 18:30:20,480 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'munittesting'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:20,481 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-02-01 18:30:20,483 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: munittestingFlow
+2019-02-01 18:30:20,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: munittestingFlow.stage1
+2019-02-01 18:30:20,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-02-01 18:30:20,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 01 18:30:07 IST 2019]; root of context hierarchy
+2019-02-01 18:30:20,699 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "munittesting" shut down normally on: 1/2/19 6:30 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 10.550 sec                        *
+**********************************************************************
+2019-02-01 18:30:21,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'munittesting'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:21,377 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-01 18:30:21,396 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-01 18:30:21,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-01 18:30:21,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-01 18:30:21,472 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7560013e: startup date [Fri Feb 01 18:30:21 IST 2019]; root of context hierarchy
+2019-02-01 18:30:22,406 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-01 18:30:22,562 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-tx-log\tx2.log
+2019-02-01 18:30:22,565 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\munittesting\queue-xa-tx-log\tx2.log
+2019-02-01 18:30:22,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-01 18:30:22,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: munittestingFlow
+2019-02-01 18:30:22,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2add3285
+2019-02-01 18:30:22,607 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: munittestingFlow.stage1
+2019-02-01 18:30:22,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:30:22,643 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\munittesting\munittesting.xml'}]"
+2019-02-01 18:30:22,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'munittesting'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:22,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-01 18:30:22,648 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-01 18:30:22,764 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-01 18:30:22,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-01 18:30:22,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: munittestingFlow
+2019-02-01 18:30:22,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: munittestingFlow.stage1
+2019-02-01 18:30:22,784 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-01 18:30:22,788 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: munittesting                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

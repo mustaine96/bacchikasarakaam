@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration"/>
+    
+    <flow name="httpRenderFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/uploadFile"  doc:name="HTTP"/>
+        <parse-template location="C:\mule poc\Siri\file.txt" doc:name="Parse Template"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="multipartFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/uploadFile" allowedMethods="POST"  doc:name="HTTP" metadata:id="736513ea-9071-4488-84d7-3ed3d1bece7b"/>
+        <set-variable variableName="fileName" value="#[output payload.parts.file.headers[&quot;Content-Disposition&quot;].filename]" doc:name="Variable" mimeType="application/json"/>
+        <logger message="File Content-Type : #[payload.parts.file.headers[&quot;Content-Type&quot;]] " level="INFO" doc:name="Logger"/>
+        <set-payload value="#[payload.parts.file.content]" doc:name="Set Payload" mimeType="application/json"/>
+    </flow>
+</mule>

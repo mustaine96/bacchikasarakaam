@@ -1,0 +1,226 @@
+!SESSION 2019-02-06 14:37:58.004 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.mule.tooling.core 2 0 2019-02-06 14:38:21.612
+!MESSAGE C:\Users\saigandh\.m2\repository does not exist or contain a maven repository
+
+!ENTRY org.mule.tooling.core 2 0 2019-02-06 14:38:21.638
+!MESSAGE C:\Users\saigandh\.m2\repository does not exist or contain a maven repository
+
+!ENTRY org.eclipse.ui 4 4 2019-02-06 14:38:23.460
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ContentOutline.
+
+!ENTRY org.eclipse.ui 4 4 2019-02-06 14:38:23.461
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ContentOutline.
+
+!ENTRY org.eclipse.jface 2 0 2019-02-06 15:21:26.467
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-06 15:21:26.468
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e5b32ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.dfl.contribution.commands.searchCommand,Find/Replace,
+		Find/Replace,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fe37577,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.commands.focusSearchCommand,Focus Search Command,
+		Focus Search in Palette,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12bd2630,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-06 15:26:39.995
+!MESSAGE While generating classpath found that C:\Users\saigandh\SOFTWARES\AnypointStudio-for-win-64bit-6.5.2-201811201830\AnypointStudio\plugins\org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-06 15:26:39.996
+!MESSAGE While generating classpath found that C:\Users\saigandh\SOFTWARES\AnypointStudio-for-win-64bit-6.5.2-201811201830\AnypointStudio\plugins\org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 2 0 2019-02-06 15:26:48.254
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2019-02-06 15:26:48.255
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.eclipse.jface 2 0 2019-02-06 15:27:56.129
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-06 15:27:56.129
+!MESSAGE A conflict occurred for CTRL+SHIFT+X:
+Binding(CTRL+SHIFT+X,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.upperCase,To Upper Case,
+		Changes the selection to upper case,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bca0115,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+Binding(CTRL+SHIFT+X,
+	ParameterizedCommand(Command(org.mule.tooling.runtime.muleLaunchShortcut.run,Run Mule Application,
+		Run Mule Application,
+		Category(org.mule.tooling.runtime.ui.category,Runtime Category,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ce3710f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-06 15:27:56.129
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20ce9d1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.openFlow,Open Flow,
+		Search For Flows in the current workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c4921f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-06 15:27:57.028
+!MESSAGE While generating classpath found that C:\Users\saigandh\SOFTWARES\AnypointStudio-for-win-64bit-6.5.2-201811201830\AnypointStudio\plugins\org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-06 15:27:57.030
+!MESSAGE While generating classpath found that C:\Users\saigandh\SOFTWARES\AnypointStudio-for-win-64bit-6.5.2-201811201830\AnypointStudio\plugins\org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.eclipse.jface 2 0 2019-02-06 15:28:06.580
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-06 15:28:06.580
+!MESSAGE A conflict occurred for F2:
+Binding(F2,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a6894ac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F2,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.showInformation,Show Tooltip Description,
+		Displays information for the current caret location in a focused hover,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@103528a1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+
+!ENTRY org.mule.tooling.core 4 0 2019-02-06 16:46:50.429
+!MESSAGE Could not terminate launch accounts
+!STACK 0
+java.lang.RuntimeException: Could not terminate launch accounts
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.terminateLaunchSync(MuleRuntimeLaunchDelegate.java:800)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.removeAllMuleLaunchesBut(MuleRuntimeLaunchDelegate.java:749)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.resolveConflictingLaunches(MuleRuntimeLaunchDelegate.java:670)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.launch(MuleRuntimeLaunchDelegate.java:316)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.mule.tooling.core 4 0 2019-02-06 16:46:50.491
+!MESSAGE Could not terminate launch accounts
+!STACK 0
+java.lang.RuntimeException: Could not terminate launch accounts
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.terminateLaunchSync(MuleRuntimeLaunchDelegate.java:800)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.removeAllMuleLaunchesBut(MuleRuntimeLaunchDelegate.java:749)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.resolveConflictingLaunches(MuleRuntimeLaunchDelegate.java:670)
+	at org.mule.tooling.runtime.launch.MuleRuntimeLaunchDelegate.launch(MuleRuntimeLaunchDelegate.java:316)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-02-08 13:35:38.881 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-02-08 13:35:48.295
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-08 13:35:53.495
+!MESSAGE Configuring M2_REPO variable with value: C:\Users\saigandh\.m2\repository
+
+!ENTRY org.mule.tooling.core 1 0 2019-02-08 13:35:53.509
+!MESSAGE Configuring M2_REPO variable with value: C:\Users\saigandh\.m2\repository
+!SESSION 2019-02-08 14:47:15.790 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-02-08 14:50:11.508
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-08 14:50:11.508
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@549db1c6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.dfl.contribution.commands.searchCommand,Find/Replace,
+		Find/Replace,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@785a632,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.commands.focusSearchCommand,Focus Search Command,
+		Focus Search in Palette,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42b41bc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+!SESSION 2019-02-13 14:51:29.210 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2019-02-13 14:58:56.267
+!MESSAGE Exception in update check thread
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:427)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:259)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)

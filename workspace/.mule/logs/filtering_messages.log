@@ -1,0 +1,117 @@
+2019-02-11 16:35:26,329 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filtering_messages'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:26,494 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-11 16:35:26,591 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-11 16:35:26,686 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-11 16:35:26,686 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-11 16:35:26,900 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@758f4f03: startup date [Mon Feb 11 16:35:26 IST 2019]; root of context hierarchy
+2019-02-11 16:35:28,009 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-11 16:35:28,888 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-11 16:35:29,125 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-tx-log\tx2.log
+2019-02-11 16:35:29,178 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-xa-tx-log\tx2.log
+2019-02-11 16:35:29,388 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-11 16:35:29,391 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filtering_messagesFlow
+2019-02-11 16:35:29,392 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4b1ec694
+2019-02-11 16:35:29,416 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filtering_messagesFlow.stage1
+2019-02-11 16:35:29,611 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\filtering_messages\filtering_messages.xml'}]"
+2019-02-11 16:35:29,611 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\filtering_messages\filtering_messages.xml'}]"
+2019-02-11 16:35:29,615 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-11 16:35:29,616 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filtering_messages'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:29,617 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-11 16:35:29,617 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-11 16:35:29,665 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-11 16:35:29,667 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:29,670 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-11 16:35:29,671 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filtering_messagesFlow
+2019-02-11 16:35:29,671 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filtering_messagesFlow.stage1
+2019-02-11 16:35:29,706 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-11 16:35:29,724 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filtering_messages                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-11 16:35:44,755 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'filtering_messages'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:44,757 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: filtering_messagesFlow
+2019-02-11 16:35:44,757 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: filtering_messagesFlow.stage1
+2019-02-11 16:35:44,935 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-02-11 16:35:44,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081
+2019-02-11 16:35:44,953 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-02-11 16:35:44,953 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-02-11 16:35:44,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'filtering_messages'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:44,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-02-11 16:35:44,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: filtering_messagesFlow
+2019-02-11 16:35:44,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: filtering_messagesFlow.stage1
+2019-02-11 16:35:44,962 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-02-11 16:35:45,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@758f4f03: startup date [Mon Feb 11 16:35:26 IST 2019]; root of context hierarchy
+2019-02-11 16:35:45,103 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "filtering_messages" shut down normally on: 11/2/19    *
+* 4:35 PM                                                            *
+* Up for: 0 days, 0 hours, 0 mins, 15.485 sec                        *
+**********************************************************************
+2019-02-11 16:35:45,263 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'filtering_messages'                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:45,270 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-11 16:35:45,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-11 16:35:45,283 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-11 16:35:45,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-11 16:35:45,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4268a75a: startup date [Mon Feb 11 16:35:45 IST 2019]; root of context hierarchy
+2019-02-11 16:35:45,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-11 16:35:45,651 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-tx-log\tx2.log
+2019-02-11 16:35:45,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\filtering_messages\queue-xa-tx-log\tx2.log
+2019-02-11 16:35:45,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-11 16:35:45,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filtering_messagesFlow
+2019-02-11 16:35:45,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6dff13e8
+2019-02-11 16:35:45,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filtering_messagesFlow.stage1
+2019-02-11 16:35:45,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\filtering_messages\filtering_messages.xml'}]"
+2019-02-11 16:35:45,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\filtering_messages\filtering_messages.xml'}]"
+2019-02-11 16:35:45,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'filtering_messages'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:45,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-11 16:35:45,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-11 16:35:45,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-11 16:35:45,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-11 16:35:45,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-11 16:35:45,714 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filtering_messagesFlow
+2019-02-11 16:35:45,714 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filtering_messagesFlow.stage1
+2019-02-11 16:35:45,724 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-11 16:35:45,728 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: filtering_messages                                    *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

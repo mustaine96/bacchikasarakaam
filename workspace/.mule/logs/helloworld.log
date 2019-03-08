@@ -1,0 +1,124 @@
+2019-01-24 12:16:05,722 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:05,906 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-01-24 12:16:06,015 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-01-24 12:16:06,140 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-01-24 12:16:06,140 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-01-24 12:16:06,366 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4152d38d: startup date [Thu Jan 24 12:16:06 IST 2019]; root of context hierarchy
+2019-01-24 12:16:07,428 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-24 12:16:08,203 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-01-24 12:16:08,569 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2019-01-24 12:16:08,600 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2019-01-24 12:16:08,694 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-01-24 12:16:08,709 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2019-01-24 12:16:08,709 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@73aeef7d
+2019-01-24 12:16:08,743 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2019-01-24 12:16:09,063 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\helloworld\helloworld.xml'}]"
+2019-01-24 12:16:09,063 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\helloworld\helloworld.xml'}]"
+2019-01-24 12:16:09,063 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-01-24 12:16:09,063 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:09,063 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-01-24 12:16:09,063 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-01-24 12:16:09,125 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2019-01-24 12:16:09,141 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:09,141 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-01-24 12:16:09,141 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2019-01-24 12:16:09,141 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2019-01-24 12:16:09,172 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-01-24 12:16:09,203 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-01-24 12:16:15,695 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:23,627 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:25,166 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:25,750 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:26,147 [[helloworld].HTTP_Listener_Configuration.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:26,510 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:26,868 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - payload
+2019-01-24 12:16:54,269 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:54,270 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: helloworldFlow
+2019-01-24 12:16:54,271 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: helloworldFlow.stage1
+2019-01-24 12:16:54,332 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2019-01-24 12:16:54,338 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2019-01-24 12:16:54,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2019-01-24 12:16:54,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2019-01-24 12:16:54,345 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:54,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2019-01-24 12:16:54,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2019-01-24 12:16:54,347 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2019-01-24 12:16:54,351 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2019-01-24 12:16:54,476 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@4152d38d: startup date [Thu Jan 24 12:16:06 IST 2019]; root of context hierarchy
+2019-01-24 12:16:54,486 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 24/1/19 12:16 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 45.420 sec                        *
+**********************************************************************
+2019-01-24 12:16:54,621 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:54,634 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-01-24 12:16:54,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-01-24 12:16:54,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-01-24 12:16:54,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-01-24 12:16:54,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@32041bc9: startup date [Thu Jan 24 12:16:54 IST 2019]; root of context hierarchy
+2019-01-24 12:16:54,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-24 12:16:55,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2019-01-24 12:16:55,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2019-01-24 12:16:55,067 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-01-24 12:16:55,068 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2019-01-24 12:16:55,068 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@25521d71
+2019-01-24 12:16:55,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2019-01-24 12:16:55,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\helloworld\helloworld.xml'}]"
+2019-01-24 12:16:55,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\helloworld\helloworld.xml'}]"
+2019-01-24 12:16:55,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:55,090 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-01-24 12:16:55,090 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-01-24 12:16:55,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2019-01-24 12:16:55,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-01-24 12:16:55,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-01-24 12:16:55,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2019-01-24 12:16:55,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2019-01-24 12:16:55,132 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-01-24 12:16:55,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-01-24 12:16:57,800 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Hello World!!!!!!!!!!!

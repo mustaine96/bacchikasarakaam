@@ -1,0 +1,16 @@
+INFO  2019-02-06 15:27:10,799 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'default'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-02-06 15:27:10,800 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'default'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-02-06 16:46:59,225 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'default'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-02-06 16:46:59,225 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'default'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

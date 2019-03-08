@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;accounts_api&apos;" deleteContents="false" description="Delete resource &apos;accounts_api&apos;" element1="/accounts_api" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1549452302959"/>&#x0A;<refactoring comment="Delete resource &apos;accounts-mod04-api-implementation&apos;" deleteContents="false" description="Delete resource &apos;accounts-mod04-api-implementation&apos;" element1="/accounts-mod04-api-implementation" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1549452313087"/>
+</session>

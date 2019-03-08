@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:validation="http://www.mulesoft.org/schema/mule/validation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration"/>
+    <validation:config name="Validation_Configuration" doc:name="Validation Configuration"/>
+    <flow name="filtering_messagesFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" allowedMethods="POST" doc:name="HTTP"/>
+        <json:json-to-object-transformer returnClass="java.util.HashMap" doc:name="JSON to HashMap"/>
+        <payload-type-filter expectedType="org.mule.examples.InputDataValidator" doc:name="Payload"/>
+        <set-variable variableName="details" value="#[payload]" doc:name="Variable"/>
+        <set-payload value="#[payload['email']]" doc:name="Set Payload"/>
+        <validation:is-email config-ref="Validation_Configuration" email="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9  -]*[a-z0-9])?" doc:name="Validation"/>
+        <set-payload value="Input data validation passed" doc:name="Set Payload"/>
+    </flow>
+</mule>

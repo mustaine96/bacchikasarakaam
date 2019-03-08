@@ -1,0 +1,54 @@
+2019-02-08 11:18:00,856 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app                                         +
++ 'implementing-choice-exception-strategy'                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-08 11:18:01,095 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2019-02-08 11:18:01,388 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2019-02-08 11:18:01,519 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2019-02-08 11:18:01,520 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2019-02-08 11:18:01,633 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5aceec94: startup date [Fri Feb 08 11:18:01 IST 2019]; root of context hierarchy
+2019-02-08 11:18:02,863 [main] WARN  org.mule.transport.http.config.HttpResponseBuilderDefinitionParser - Schema warning: Use of element <error-response-builder> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2019-02-08 11:18:02,866 [main] WARN  org.mule.transport.http.builder.HttpHeaderDefinitionParser - Schema warning: Use of element <header> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2019-02-08 11:18:03,189 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-08 11:18:04,441 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2019-02-08 11:18:05,003 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\implementing-choice-exception-strategy\queue-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\implementing-choice-exception-strategy\queue-tx-log\tx2.log
+2019-02-08 11:18:05,015 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\implementing-choice-exception-strategy\queue-xa-tx-log\tx1.log and C:\Users\saigandh\AnypointStudio\workspace\.mule\.\.mule\implementing-choice-exception-strategy\queue-xa-tx-log\tx2.log
+2019-02-08 11:18:05,132 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2019-02-08 11:18:05,137 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: implementing-choice-exception-strategyFlow
+2019-02-08 11:18:05,137 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@78ec89a6
+2019-02-08 11:18:05,177 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: implementing-choice-exception-strategyFlow.stage1
+2019-02-08 11:18:05,441 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\implementing-choice-exception-strategy\implementing-choice-exception-strategy.xml'}]"
+2019-02-08 11:18:05,441 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\saigandh\AnypointStudio\workspace\.mule\apps\implementing-choice-exception-strategy\implementing-choice-exception-strategy.xml'}]"
+2019-02-08 11:18:05,445 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2019-02-08 11:18:05,445 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'implementing-choice-exception-strategy'    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-08 11:18:05,447 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2019-02-08 11:18:05,447 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2019-02-08 11:18:05,503 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2019-02-08 11:18:05,505 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-02-08 11:18:05,508 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2019-02-08 11:18:05,509 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: implementing-choice-exception-strategyFlow
+2019-02-08 11:18:05,510 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: implementing-choice-exception-strategyFlow.stage1
+2019-02-08 11:18:05,580 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2019-02-08 11:18:05,598 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: implementing-choice-exception-strategy                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2019-02-08 11:18:11,015 [[implementing-choice-exception-strategy].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/
+2019-02-08 11:18:11,015 [[implementing-choice-exception-strategy].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/input.csv/]
+2019-02-08 14:03:03,019 [[implementing-choice-exception-strategy].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/
+2019-02-08 14:03:03,019 [[implementing-choice-exception-strategy].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/input.csv/]

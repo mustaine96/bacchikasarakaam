@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\mule poc\munitdbmocking-master\munitdbmocking-master\src\test\munit\munitdbmocking-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\mule poc\munitdbmocking-master\munitdbmocking-master"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.9.1.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="munitdbmocking"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="munitdbmocking-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="munitdbmocking"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=&#13;&#10;-DmunitProjectName=munitdbmocking&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="munitdbmocking-test-suite.xml"/>
+</launchConfiguration>

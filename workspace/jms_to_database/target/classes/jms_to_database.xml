@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd">
+    <jms:activemq-connector name="Active_MQ" username="admin" password="admin" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ"/>
+    <db:mysql-config name="MySQL_Configuration" host="mudb.mulesoft-training.com" port="3306" user="mule" password="mule" database="training" doc:name="MySQL Configuration"/>
+    <flow name="jms_to_databaseFlow">
+        <jms:inbound-endpoint queue="in" connector-ref="Active_MQ" doc:name="Listen to jms message"/>
+        <mulexml:xml-to-object-transformer doc:name="XML to Order"/>
+        <logger message="Received Orders from jms Sucessfully" level="INFO" doc:name="Log the orders"/>
+        <transactional action="ALWAYS_BEGIN" doc:name="Transactional">
+            <db:select config-ref="MySQL_Configuration" doc:name="Database">
+                <db:parameterized-query><![CDATA[SELECT * from training]]></db:parameterized-query>
+            </db:select>
+            <exception-type-filter expectedType="jms_to_database.EmptyDataException" doc:name="Exception"/>
+            <jms:outbound-endpoint queue="out" connector-ref="Active_MQ" doc:name="Send a jms message">
+                <jms:client-ack-transaction action="ALWAYS_JOIN"/>
+            </jms:outbound-endpoint>
+        </transactional>
+    </flow>
+</mule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:mock="http://www.mulesoft.org/schema/mule/mock" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/mock/current/mule-mock.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration"/>
+    <spring:beans>
+        <spring:import resource="classpath:jms-rollback-and-redelivery.xml"/>
+    </spring:beans>
+    <munit:test name="jms-rollback-and-redelivery-test-suite-jms-rollback-and-redeliveryFlowTest" description="Test">
+        <mock:when doc:name="Mock" messageProcessor="jms:outbound-endpoint">
+            <mock:with-attributes>
+                <mock:with-attribute name="name" whereValue="jms-rollback-and-redeliveryFlow"/>
+            </mock:with-attributes>
+            <mock:then-return payload="#[]"/>
+        </mock:when>
+        <flow-ref name="jms-rollback-and-redeliveryFlow" doc:name="Flow-ref to jms-rollback-and-redeliveryFlow"/>
+    </munit:test>
+</mule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration"/>
+    <jms:activemq-connector name="Active_MQ" username="admin" password="admin" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ"/>
+    
+    <amqp:config name="Amqp_Config" doc:name="Amqp Config" doc:id="f7ece905-068d-42f7-a771-0ac3085a1023" >
+		<amqp:connection host="localhost" port="5672" username="guest" password="guest" />
+	</amqp:config>
+	<configuration-properties doc:name="Configuration properties" doc:id="ea53c274-311f-4384-8784-8727b3734971" file="mule-artifact.properties" />
+    <http:listener-config name="HTTP_Reciever_Configuration1" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <flow name="sending-a-json-to-jmsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/sales" allowedMethods="POST" doc:name="HTTP"/>
+        <byte-array-to-string-transformer doc:name="Byte Array to String"/>
+        <jms:outbound-endpoint queue="SalesQueue" connector-ref="Active_MQ" doc:name="JMS"/>
+        <file:outbound-endpoint path="src/main/resources/output" outputPattern="Naina/xml" responseTimeout="10000" doc:name="File"/>
+        <set-payload value="Message Published by ActiveMQ" doc:name="Set Payload"/>
+        <logger message="Sucessfully Published" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

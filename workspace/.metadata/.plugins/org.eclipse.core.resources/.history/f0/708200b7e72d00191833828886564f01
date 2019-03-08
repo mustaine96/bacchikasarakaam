@@ -1,0 +1,18 @@
+package filtering_messages;
+
+
+public class InputDataValidator implements Filter {
+
+	@Override
+	public boolean (MuleMessage message) {
+		
+		Map<String, Object> payloadMap = (Map<String, Object>) message.getPayload();
+		if (!payloadMap.containsKey("email")) 
+			throw new NullPointerException("email format is wrong");	
+		
+		return false;
+	}
+
+	
+
+}

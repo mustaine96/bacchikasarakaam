@@ -1,0 +1,83 @@
+#%RAML 1.0
+version: v1
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/a702b1a9-3edc-4f71-b958-540945c183e8/ # 
+title: Orders API
+
+/orders:
+  /{customerId}:
+    get:
+    
+      displayName: Retrive Customer Orders
+      description: Lists the user orders
+      queryParameters:
+        Order No:
+          required: false
+          type: integer
+      responses:
+        200:
+          body:
+            application/json:
+              examples : !include examples//orders_collection.raml
+    
+    post:
+      displayName: Accept Order
+      description: Create a new Order
+      body:
+        application/json:
+          examples: !include examples//create_order.raml
+      responses:
+        201:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Order was created",
+                }
+        400:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Order not created"
+                }
+        404:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Customer not found"
+                }
+  /{orderId}:
+    get:
+      displayName: retrive Orders
+      description: retrive the orders depending on orderId
+      responses:
+       200:
+        body:
+          application/json:
+            examples: !include examples/orderID_responses.raml
+    delete:
+      displayName: Delete customer order
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Order was deleted"
+                }
+        400:
+          body:
+            application/json:
+              example: |
+                {
+                  "message": "Order not deleted"
+                }
+              
+         
+        
+        
+
+                
+
+                

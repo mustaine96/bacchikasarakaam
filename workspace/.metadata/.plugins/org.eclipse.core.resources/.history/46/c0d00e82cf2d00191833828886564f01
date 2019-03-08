@@ -1,0 +1,19 @@
+package filtering_messages;
+import java.util.Map;
+
+import org.mule.api.MuleMessage;
+import org.mule.api.routing.filter.Filter;
+
+public class InputDataValidator implements Filter {
+
+	@Override
+	public boolean accept(MuleMessage message) {
+		
+		Map<String, Object> payloadMap = (Map<String, Object>) message.getPayload();
+		if (!payloadMap.containsKey("email")) 
+			throw new NullPointerException("email format is wrong");	
+		
+		return false;
+	}
+
+}

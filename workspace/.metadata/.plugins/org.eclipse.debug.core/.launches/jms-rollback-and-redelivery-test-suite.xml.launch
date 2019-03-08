@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\Users\saigandh\AnypointStudio\workspace\jms-rollback-and-redelivery\src\test\munit\jms-rollback-and-redelivery-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\Users\saigandh\AnypointStudio\workspace\jms-rollback-and-redelivery"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.9.1.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="jms-rollback-and-redelivery"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="jms-rollback-and-redelivery-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="jms-rollback-and-redelivery"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=&#13;&#10;-DmunitProjectName=jms-rollback-and-redelivery&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="jms-rollback-and-redelivery-test-suite.xml"/>
+</launchConfiguration>

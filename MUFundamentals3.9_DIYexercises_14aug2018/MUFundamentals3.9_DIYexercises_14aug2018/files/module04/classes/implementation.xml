@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:anypoint-mq="http://www.mulesoft.org/schema/mule/anypoint-mq" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:context="http://www.springframework.org/schema/context" xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/mule/anypoint-mq/current/mule-anypoint-mq.xsd">
+
+    <db:mysql-config name="MySQL_Configuration" host="mudb.mulesoft-training.com" port="3306" user="mule" password="mule" database="training" doc:name="MySQL Configuration"/>
+    <flow name="getAllAccountsFlow">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT * FROM flights_customers WHERE accountType = #[message.inboundProperties.'http.query.params'.type]]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message" metadata:id="4c749ffc-8f46-45b1-ba97-60bba39fffd9">
+            <dw:input-payload doc:sample="sample_data/list_map.dwl"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	id: payload01.accountID,
+	firstName: (payload01.name splitBy ' ')[0],
+	lastName: (payload01.name splitBy ' ')[1],
+	address: payload01.street ++ " " ++ payload01.city ++ ", " ++ payload01.state,
+	postal: payload01.postal,
+	country: payload01.country,
+	creationDate: (payload01.creationDate as :string) ++ "+0:00",
+	accountType: payload01.accountType,
+	miles: payload01.miles
+})
+]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+        <flow name="getSingleAccountFlow">
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT * FROM flights_customers WHERE accountID = #[message.inboundProperties.'http.uri.params'.id]]]></db:parameterized-query>
+        </db:select>
+        <dw:transform-message doc:name="Transform Message" metadata:id="9b84dcfc-7edf-4a17-ac6d-73a5e8095ee1">
+            <dw:input-payload doc:sample="sample_data/list_map.dwl"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+(payload map ((payload01 , indexOfPayload01) -> {
+    id: payload01.accountID,
+   	firstName: (payload01.name splitBy ' ')[0],
+	lastName: (payload01.name splitBy ' ')[1 to -1] joinBy " ",
+ 	address: payload01.street ++ ", " ++ payload01.city ++ ", " ++ payload01.state,
+	postal: payload01.postal,
+	country: payload01.country,
+	creationDate: (payload01.creationDate as :string) ++ "+0:00",
+	accountType: payload01.accountType,
+	miles: payload01.miles
+}))[0]
+]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+
+
+
+
+
+
+
+
+
+
+</mule>

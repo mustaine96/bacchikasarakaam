@@ -1,0 +1,4 @@
+authenticated.users=[{"id"\:"f00ac29f-a3c4-4b13-86fb-f40b63fc0157","token"\:"8018666e-dc89-4e30-bceb-f95368163f20","userId"\:"saigandh","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=8018666e-dc89-4e30-bceb-f95368163f20
+current.user=saigandh
+eclipse.preferences.version=1
